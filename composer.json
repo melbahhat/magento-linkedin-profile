@@ -25,5 +25,7 @@
     "psr-4": {
       "Assignment\\LinkedinAttribute\\": ""
     }
-  }
+  },
+ "minimum-stability": "dev",
+    "prefer-stable": true:
 }
