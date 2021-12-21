@@ -1,0 +1,11 @@
+<?php
+/** @var \Magento\Customer\Block\Account\Dashboard\Info $block */
+
+$linkedin_profile = $block->getCustomer()->getCustomAttribute('linkedin_profile');
+$linkedin_profile = $linkedin_profile ? $linkedin_profile->getValue() : null;
+?>
+
+<div class="box-content">
+
+<p><?= $linkedin_profile?></p>
+</div>

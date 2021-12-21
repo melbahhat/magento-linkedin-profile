@@ -1,0 +1,19 @@
+<?php
+/** @var \Magento\Customer\Block\Form\Edit $block */
+$linkedin_profile = $block->getCustomer()->getCustomAttribute('linkedin_profile');
+$linkedin_profile = $linkedin_profile ? $linkedin_profile->getValue() : null;
+?>
+
+<fieldset class="fieldset create account" >
+    <legend class="legend">
+        <span><?=$block->escapeHtmlAttr(__('LinkedIn profile'))?></span>
+    </legend>
+    <br>
+    <div class="field linkedin_profile">
+        <label for="linkedin_profile" class="label"><span><?=$block->escapeHtmlAttr(__('LinkedIn profile'));?></span></label>
+        <div class="control">
+            <input id="linkedin_profile" class="input-text" name="linkedin_profile" value="<?=$block->escapeHtmlAttr($linkedin_profile);?>" title="<?=$block->escapeHtmlAttr(__('LinkedIn Profile'));?>" type="text"
+                   data-validate="{'validate-url':true, 'validate-length maximum-length-250':true}"/>
+        </div>
+    </div>
+</fieldset>

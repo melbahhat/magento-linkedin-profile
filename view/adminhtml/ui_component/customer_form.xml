@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="customer">
+        <field name="linkedin_profile">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="required" xsi:type="boolean">false</item>
+                    <item name="sortOrder" xsi:type="number">333</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="label" translate="true" xsi:type="string">Linkedin Profile</item>
+                    <item name="validation" xsi:type="array">
+                        <item name="validate-length maximum-length-250" xsi:type="array">
+                            <item name="validate" xsi:type="boolean">true</item>
+                            <item name="message" xsi:type="string">Length must not be greater than 250 character length!.</item>
+                        </item>
+
+                        <item name="validate-url" xsi:type="array">
+                            <item name="validate" xsi:type="boolean">true</item>
+                             <item name="message" xsi:type="string">the value must be url</item>
+                        </item>
+                    </item>
+                </item>
+            </argument>
+        </field>
+    </fieldset>
+</form>
