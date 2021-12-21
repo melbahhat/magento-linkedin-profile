@@ -3,8 +3,7 @@
    "description": "Magento 2  add linkedin attribute to customer module ",
  
   "require": {
-    "php": "~7.3.0||~7.4.0",
-       "magento/framework": "103.0.*"
+    "php": "~7.3.0||~7.4.0"
   },
   "type": "magento2-module",
   "version": "0.0.1",
