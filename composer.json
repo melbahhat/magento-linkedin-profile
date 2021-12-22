@@ -3,6 +3,9 @@
   "description": "Custom Magento 2 extension",
   "type": "magento2-module",
    "version": "0.0.1",
+   "require": {
+        "melbahhat/magento-linkedin-profile": "0.0.1"
+    },
   
   "autoload": {
     "files": [ "registration.php" ],
