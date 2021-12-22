@@ -1,26 +1,21 @@
 {
-    "name": "melbahhat/magento-linkedin-profile",
-   "description": "Magento 2  add linkedin attribute to customer module ",
- 
+  "name": "melbahhat/magento-linkedin-profile",
+  "description": "Magento 2 linkedin attribute",
+   
   "require": {
-    "php": "~7.3.0||~7.4.0"
+    "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0|~7.3.0|~7.4.0",
+    "magento/framework": "101.0.*"
   },
-    
-    "repositories": [
-    {
-      "type": "composer",
-      "url":  "https://repo.packagist.com/sqli/"
-    }
-  ],
   "type": "magento2-module",
+  "version": "0.0.1",
   "license": [
     "OSL-3.0",
     "AFL-3.0"
   ],
   "authors": [
     {
-      "name": "Meryem Elbahhat",
-      "email": "melbahhat@gmail.com",
+      "name": "melbahhat@gmail.com",
+      "email": "elbahhat@gmail.com",
       "role": "Magento 2 Developer"
     }
   ],
@@ -31,8 +26,5 @@
     "psr-4": {
       "Assignment\\LinkedinAttribute\\": ""
     }
-  },
- "minimum-stability": "stable",
-  "version": "0.0.1"
-
+  }
 }
